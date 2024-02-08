@@ -186,7 +186,7 @@ How to get parameters for these methods?  Use PurchaseProcessingResult method
 
      MoonSDK.SendUAEvent(MoonSDK.UAEventType.Type1);
 
-### Progression Events
+### 9. Progression Events
 
 You can track levels progression events in your game using GameAnalytics
 
