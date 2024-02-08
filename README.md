@@ -55,7 +55,7 @@ Interstitials
 Banner
 
 To use the advertisement manager add the following namespace: 
-using Moonee.MoonSDK.Internal.Advertisement;
+      using Moonee.MoonSDK.Internal.Advertisement;
 
 Rewarded video ads API:
 
@@ -78,13 +78,13 @@ Rewarded video ads API:
         });
 
 
-AdvertisementManager.IsRewardedAdReady();
+      AdvertisementManager.IsRewardedAdReady();
 
 Interstitial ads API:
 
-    double timeLeftForNextAd = AdvertisementManager.InterstitialTimer;
+      double timeLeftForNextAd = AdvertisementManager.InterstitialTimer;
 
- AdvertisementManager.ShowInterstitial(
+       AdvertisementManager.ShowInterstitial(
         () =>
         {
             //Ad start logic
@@ -98,13 +98,13 @@ Interstitial ads API:
             //Ad fail logic
         });
 
- AdvertisementManager.IsInterstitialdAdReady();
+       AdvertisementManager.IsInterstitialdAdReady();
 
 Banner API:
 
- AdvertisementManager.ShowBanner();
+      AdvertisementManager.ShowBanner();
 
-  AdvertisementManager.HideBanner();
+      AdvertisementManager.HideBanner();
 
 
 #
@@ -112,7 +112,7 @@ Banner API:
 
 With Moon SDK you can send custom events to various analytics services
 
- MoonSDK.TrackCustomEvent("Event name", MoonSDK.AnalyticsProvider.Firebase);
+     MoonSDK.TrackCustomEvent("Event name", MoonSDK.AnalyticsProvider.Firebase);
     
 
 ### 7. Firebase Configuration
@@ -151,13 +151,13 @@ Note that int_grace_time, cooldown_between_INTs, cooldown_after_RVs are managed 
 
 
 
-if(RemoteConfigValues.Show_int_if_fail == true)
+    if(RemoteConfigValues.Show_int_if_fail == true)
         {
             AdvertisementManager.ShowInterstitial();
         }
 
 
-  if(RemoteConfigValues.INT_in_stage == true)
+    if(RemoteConfigValues.INT_in_stage == true)
         {
             AdvertisementManager.ShowInterstitial();
         }
@@ -179,7 +179,7 @@ To send price in USD use this method
 
 To send price in local currency use this method
 
-MoonSDK.TrackAdjustRevenueEvent(20, transactionID);
+    MoonSDK.TrackAdjustRevenueEvent(20, transactionID);
 
 How to get parameters for these methods?  Use PurchaseProcessingResult method
 
@@ -192,20 +192,20 @@ You can track levels progression events in your game using GameAnalytics
 
 
 
-MoonSDK.TrackLevelEvents(MoonSDK.LevelEvents.Start, 1);
+  MoonSDK.TrackLevelEvents(MoonSDK.LevelEvents.Start, 1);
 
 Also you need to track level events for Adjust
 
 
- MoonSDK.SendLevelDataCompleteEvent(LevelStatus.complete, "001", LevelResult.win, false);
+     MoonSDK.SendLevelDataCompleteEvent(LevelStatus.complete, "001", LevelResult.win, false);
 
 
-MoonSDK.SendLevelDataStartEvent("001");
+    MoonSDK.SendLevelDataStartEvent("001");
 
 ### 10. Rate Us View
 
 You can open rate us screen using code example below
- MoonSDK.OpenRateUsScreen();
+     MoonSDK.OpenRateUsScreen();
 
 
 
