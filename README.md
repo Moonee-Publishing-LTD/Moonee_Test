@@ -10,10 +10,10 @@ Your gateway to endless gaming possibilities!
   5. Displaying Ads
   6. Analytics
   7. Firebase Configuration
-  8. Firebase Remote Configuration
-  9. Adjust events
-  10. Progression events
-  11. Rate Us View
+  8. Adjust events
+  9. Progression events
+  10. Rate Us View
+
 
   #
  ### 1. System Requirements
@@ -158,13 +158,13 @@ Note that int_grace_time, cooldown_between_INTs, cooldown_after_RVs are managed 
 
 
 
-    if(RemoteConfigValues.Show_int_if_fail == true)
+      if(RemoteConfigValues.Show_int_if_fail == true)
         {
             AdvertisementManager.ShowInterstitial();
         }
 
 
-    if(RemoteConfigValues.INT_in_stage == true)
+      if(RemoteConfigValues.INT_in_stage == true)
         {
             AdvertisementManager.ShowInterstitial();
         }
