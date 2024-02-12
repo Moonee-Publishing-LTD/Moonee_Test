@@ -38,8 +38,10 @@ Scripting backend: IL2CPP
   2. Please note, that our SDK uses some iAP features, so iAP package should be installed from the package manager
   
   3. The MoonSDKScene must be the first in the list in the build settings, after initialization it will load the next scene in the list (with index 1).
+
+     ![MoonSDKScene](images/MoonSDKScene.png)
      
-  5. Open MoonSDK settings and fill in all app keys for analytics and advertising services which you want to use and press Check and Sync Settings button
+  4. Open MoonSDK settings and fill in all app keys for analytics and advertising services which you want to use and press Check and Sync Settings button
 
 #    
 ### 4. Initialization
@@ -57,7 +59,6 @@ Banner
 To use the advertisement manager add the following namespace: 
       using Moonee.MoonSDK.Internal.Advertisement;
 
-![api]([https://drive.google.com/file/d/1dZaZkWZzssnM4x2-QVXN5y7-A4U4hMhQ/view?usp=sharing.png](https://drive.google.com/file/d/1dZaZkWZzssnM4x2-QVXN5y7-A4U4hMhQ/view?usp=sharing))
 
 Rewarded video ads API:
 
