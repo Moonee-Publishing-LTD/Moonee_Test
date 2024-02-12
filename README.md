@@ -209,6 +209,10 @@ Also you need to track level events for Adjust
 
     MoonSDK.SendLevelDataStartEvent("001");
 
+**Note**: In this part it is crutial to check:  
+     - **A.** Token to Adjust for EACH event  
+     - **B.**  No spaces before and after the tokem  
+
 ### 10. Rate Us View
 
 You can open rate us screen using code example below
