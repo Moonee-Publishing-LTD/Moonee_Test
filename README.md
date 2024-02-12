@@ -42,6 +42,8 @@ Scripting backend: IL2CPP
      ![MoonSDKScene](images/MoonSDKScene.png)
      
   4. Open MoonSDK settings and fill in all app keys for analytics and advertising services which you want to use and press Check and Sync Settings button
+    
+     ![SyncSettings](images/SyncSettings.png)
 
 #    
 ### 4. Initialization
