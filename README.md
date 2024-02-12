@@ -124,7 +124,9 @@ With Moon SDK you can send custom events to various analytics services
 
 To correctly initialize Firebase, you need to go to the Firebase console and download the configuration files to your project (google-services.json for android and GoogleService-Info.plist for iOS)
 
-Firebase Remote Config 
+![MoonSDKScene](images/AssetesStreamings.png)
+
+**Firebase Remote Config** 
 
 Moon SDK by default uses some default remote config values:
 
