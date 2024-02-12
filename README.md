@@ -57,6 +57,8 @@ Banner
 To use the advertisement manager add the following namespace: 
       using Moonee.MoonSDK.Internal.Advertisement;
 
+![api]([https://drive.google.com/file/d/1dZaZkWZzssnM4x2-QVXN5y7-A4U4hMhQ/view?usp=sharing.png](https://drive.google.com/file/d/1dZaZkWZzssnM4x2-QVXN5y7-A4U4hMhQ/view?usp=sharing))
+
 Rewarded video ads API:
 
        AdvertisementManager.ShowRewardedAd(
