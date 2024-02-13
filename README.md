@@ -34,8 +34,46 @@ DATA is MOONEE’s key for decision making.
 ## 2. Platforms Settings
 It’s Not mandatory for the game to be live yet in the store for this part  
 ### Facebook
-Make sure to follow all the steps in this guide.
+Make sure to follow all the following steps:  
+
+A. Creating a game in the facebook UI:    
+[https://developers.facebook.com/apps](https://developers.facebook.com/apps)  
+
+B. Create an app:
+   The following manula by Meta is explaning how to create an app.
+   [https://developers.facebook.com/docs/development/create-an-app/](https://developers.facebook.com/docs/development/create-an-app/)  
+   When you need to choose they type of the app, choose the Other > Gaming app. 
+
+C. Go to Settings > Basic and fill the needed info
+
+D. Create a valid privacy policy and User data deletion:
+   Create Privacy policy on: [https://app-privacy-policy-generator.firebaseapp.com/](https://app-privacy-policy-generator.firebaseapp.com/)
+   After creating, downloading it and opening it on Google Docs. 
+   Under "File" choose "Publish to the web" and it will create you a Privacy Policy link.
+   Insert the created link on Both privacy policy and User data deletion sections, and choose the needed Category and Sub-Category.
+E. Choose and add your platform: 
+   Android fill the package name (it’s the bundle), and on IOS fill App’s ID and Bundle ID.
+F. Other sections or to confirm ownership are not mandatory so don’t worry about it!
+* Click “Save Changes”
+
+G. Add Moonee’s Ad Account ID
+
+For us to be able to test your game, we need to connect it to our Ad Account:
+Go to Settings -> Advanced and fill the needed info:
+Scroll down to the section “Advertising Accounts” and insert:
+267507499172466
+
+H. Activate your app. 
+Make sure to set the status on the first row to”Live”
+Click Save
+
+Step 6: Verify data
+You can download + open the app, and check on FB Developer main dashboard, if you’re seeing data of last date installs:
+
+
+
 Afterwards share in the Slack channel your FB App ID.
+
 ### Game Analytics 
 1. Create a Game analytics account and asset using this link.
 2. If your game is level based, make sure to have the events:
