@@ -108,29 +108,49 @@ This package allows you to capture footage directly from the engine in all of th
   - For further information regarding the tool, see the official unity guide: About Unity recorder.
 
 ## 4. SDK Implementation
-Please remove all other SDK’s before implementing Moonlight SDK
-The letest SDK version is 1.3.5
-Notice: For this test use only Facebook, Game analytics and Adjust SDKs features.
+#### SDK Implementation Step 1. Downloading the MOON SDK
+The current version of the MOON SDK is [version 1.3.5](https://drive.google.com/file/d/1jYZ65BiPbhzySEBcFSuwxP9EGQJkjsfM/view) 
+**Notice: For this test use only Facebook, Game analytics and Adjust SDKs features!**
+
+#
+#### SDK Implementation Step 2. Setting Up Moon SDK
+
+  1. Import MoonSDK.unitypackage into your unity project.
+  
+  2. The MoonSDKScene must be the first in the list in the build settings, after initialization it will load the next scene in the list (with index 1).
+
+     ![MoonSDKScene](images/MoonSDKScene.png)
+     
+  3. Open MoonSDK settings and fill in all app keys for analytics and advertising services which you want to use and press Check and Sync Settings button
+    
+     ![SyncSettings](images/SyncSettings.png)
+ 
+ 4. Initialization: Moon SDK is initialized automatically from the Moon SDK scene.
+
+ 5. Progression Events: You can track levels progression events in your game using GameAnalytics
+`MoonSDK.TrackLevelEvents(MoonSDK.LevelEvents.Start, 1)`
+
+ 6. Make sure you filled the mandatory keys for the test under Facebook, Game Analytics and Adjust Basics section:
+You will get the needed Adjust tokens from your Publisher Manager
 
 ## 5. DATA Safety
 
 - For Android: 
 Please make sure your app’s privacy and security practices match the store’s standards.   
-[link](https://docs.google.com/document/d/1xN6lX-wWwJfFPhiAr2oifMPD_mAtMWC39qZdFRv2uFY/edit)
-**Policy Declaration for Play Safety Label Android**
-
-You need to fill this part in Google Play store as the following: 
-
-APP CONTENT -> DATA SAFETY -> DEVICE OR OTHER IDENTIFIERS.
-
+Use this[how-to-Android-guide](https://docs.google.com/document/d/1xN6lX-wWwJfFPhiAr2oifMPD_mAtMWC39qZdFRv2uFY/edit)   
 - For IOS:
 Please make sure your app’s privacy and security practices match the store’s standards. 
-Use this how-to guide.
+Use this [how-to iOS-guide](https://docs.google.com/document/d/1FpO0OBE2uL9FS098HBX1sfBWrDMZFtc8t3dmmAclOGc/edit).
 
 ## 6. Ready For Testing
 
 1. Once you finish all of the above steps and your game is good to go, publish it on Google Play Store/ App Store.
 2. Once the game is live, share in the Slack Channel the game’s store URL and its Facebook App ID.
-3. Make sure you’ve done all the needed steps here:
-Meta Instructions For Testing.
+3. Make sure you’ve done all the steps above
+4. Get check for the following:
+  - We are getting installs data from the app
+  - We get levelDataStrat and levelDataComplete events from the app
+
+
+# Good Luck! May the force be with you!
 
