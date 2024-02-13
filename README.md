@@ -66,6 +66,7 @@ Notice: For this test use only Facebook, Game analytics and Adjust SDKs features
 
 - For Android: 
 Please make sure your app’s privacy and security practices match the store’s standards.   
+[link](https://docs.google.com/document/d/1xN6lX-wWwJfFPhiAr2oifMPD_mAtMWC39qZdFRv2uFY/edit)
 **Policy Declaration for Play Safety Label Android**
 
 You need to fill this part in Google Play store as the following: 
