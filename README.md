@@ -65,7 +65,7 @@ Notice: For this test use only Facebook, Game analytics and Adjust SDKs features
 ## 5. DATA Safety
 
 - For Android: 
-Please make sure your app’s privacy and security practices match the store’s standards. 
+Please make sure your app’s privacy and security practices match the store’s standards.   
 **Policy Declaration for Play Safety Label Android**
 
 You need to fill this part in Google Play store as the following: 
