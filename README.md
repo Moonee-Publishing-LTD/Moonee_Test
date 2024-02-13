@@ -63,5 +63,23 @@ The letest SDK version is 1.3.5
 Notice: For this test use only Facebook, Game analytics and Adjust SDKs features.
 
 ## 5. DATA Safety
+
+- For Android: 
+Please make sure your app’s privacy and security practices match the store’s standards. 
+**Policy Declaration for Play Safety Label Android**
+
+You need to fill this part in Google Play store as the following: 
+
+APP CONTENT -> DATA SAFETY -> DEVICE OR OTHER IDENTIFIERS.
+
+- For IOS:
+Please make sure your app’s privacy and security practices match the store’s standards. 
+Use this how-to guide.
+
 ## 6. Ready For Testing
+
+1. Once you finish all of the above steps and your game is good to go, publish it on Google Play Store/ App Store.
+2. Once the game is live, share in the Slack Channel the game’s store URL and its Facebook App ID.
+3. Make sure you’ve done all the needed steps here:
+Meta Instructions For Testing.
 
