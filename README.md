@@ -13,14 +13,14 @@ DATA is MOONEE’s key for decision making.
 # Prototype Test Instructions:   
 **Please remove all other SDK’s before implementing Moon SDK!**
 #
-
-# Prototype Test Instructions
 1. System Requirements
 2. Platforms Settings
-3. Video Creatives
-4. SDK Implementation
-5. DATA Safety
-6. Ready For Testing
+   1. Facebook (9 steps)
+   2. Game Analytics (4 steps)
+4. Video Creatives
+5. SDK Implementation
+6. DATA Safety
+7. Ready For Testing
 
 ## 1. System Requirements
 - Unity Editor 2021.2 or higher 2021 LTS version
@@ -36,47 +36,47 @@ It’s Not mandatory for the game to be live yet in the store for this part
 ### Facebook
 Make sure to follow all the following steps:  
 
-1. Creating a game in the facebook UI:    
+#### Facebook step 1. Creating a game in the facebook UI:    
 [https://developers.facebook.com/apps](https://developers.facebook.com/apps)  
-
-2. Create an app:
-   The following manula by Meta is explaning how to create an app.
-   [https://developers.facebook.com/docs/development/create-an-app/](https://developers.facebook.com/docs/development/create-an-app/)  
-   When you need to choose they type of the app, choose the Other > Gaming app. 
-
-3. Go to Settings > Basic and fill the needed info
-
-4. Create a valid privacy policy and User data deletion:
-   Create Privacy policy on: [https://app-privacy-policy-generator.firebaseapp.com/](https://app-privacy-policy-generator.firebaseapp.com/)
-   After creating, downloading it and opening it on Google Docs. 
-   Under "File" choose "Publish to the web" and it will create you a Privacy Policy link.
-   Insert the created link on Both privacy policy and User data deletion sections, and choose the needed Category and Sub-Category.
-   ![Basic](images/facebookBasic.png)
-5. Choose and add your platform: 
-   Android fill the package name (it’s the bundle), and on IOS fill App’s ID and Bundle ID.
-6. Other sections or to confirm ownership are not mandatory so don’t worry about it!
-* Click “Save Changes”
-
-7. Add Moonee’s Ad Account ID
-
-For us to be able to test your game, we need to connect it to our Ad Account:
-Go to Settings -> Advanced and fill the needed info:
-Scroll down to the section “Advertising Accounts” and insert:
-267507499172466
-
-8. Activate your app. 
+#
+#### Facebook step 2. Create an app:
+The following manula by Meta is explaning how to create an app.
+[https://developers.facebook.com/docs/development/create-an-app/](https://developers.facebook.com/docs/development/create-an-app/)  
+When you need to choose they type of the app, choose the Other > Gaming app. 
+#
+#### Facebook step 3. Go to Settings > Basic and fill the needed info
+#
+#### Facebook step 4. Create a valid privacy policy and User data deletion:  
+&nbsp;&nbsp;&nbsp;A. Create Privacy policy on: [https://app-privacy-policy-generator.firebaseapp.com/](https://app-privacy-policy-generator.firebaseapp.com/)  
+&nbsp;&nbsp;&nbsp;B. After creating, downloading it and opening it on Google Docs.   
+&nbsp;&nbsp;&nbsp;C. Under "File" choose "Publish to the web" and it will create you a Privacy Policy link.  
+&nbsp;&nbsp;&nbsp;d. Insert the created link on Both privacy policy and User data deletion sections, and choose the needed Category and Sub-Category (Hyper Casual, Hybrid etc.).  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Basic](images/facebookBasic.png)
+#
+#### Facebook step 5. Choose and add your platform: 
+&nbsp;&nbsp;&nbsp;A. Android fill the package name (it’s the bundle), and on IOS fill App’s ID and Bundle ID.  
+&nbsp;&nbsp;&nbsp;B. Other sections or to confirm ownership are not mandatory so don’t worry about it!  
+&nbsp;&nbsp;&nbsp;D. Click “Save Changes”  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Android](images/Android.png)
+#
+#### Facebook step 6. Activate your app 
 Make sure to set the status on the first row to”Live”
-Click Save
-
-Step 6: Verify data
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![live app](images/liveAppMeta.png)
+#
+#### Facebook step 7. Add Moonee’s Ad Account ID
+For us to be able to test your game, we need to connect it to our Ad Account:
+&nbsp;&nbsp;&nbsp;a. Go to Settings -> Advanced and fill the needed info:
+&nbsp;&nbsp;&nbsp;a. Scroll down to the section “Advertising Accounts” and insert Moonee’s Ad Account ID:`267507499172466`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![live app](images/AccountID.png)
+#
+#### Facebook step 8. Verify data
 You can download + open the app, and check on FB Developer main dashboard, if you’re seeing data of last date installs:
-
-
-
-Afterwards share in the Slack channel your FB App ID.
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![live app](images/verifyData.png)
+#
+#### Facebook step 9. Share in the Slack channel your FB App ID.
+#
 ### Game Analytics 
-1. Create a Game analytics account and asset using this link.
+1. Create a Game analytics account and asset using this [link](https://tool.gameanalytics.com/login?redirect=%252F).
 2. If your game is level based, make sure to have the events:
     - Start
     - Complete
@@ -89,12 +89,23 @@ Afterwards share in the Slack channel your FB App ID.
     - Settings -> Users -> Invite users -> for this user erez@moonee.io
 
 ## 3. Video Creatives
-Provide gameplay videos for ads (preferred via Google Drive) with game sounds (if there are ones)
-
-Two videos are needed in a Format of 1080X1350:
-1. Length of 2 minutes of different fails.
-2. Length of 3 minutes which include normal play, expert play and satisfying moments (Unique scenes and highlights of the game).
-[Recording tips](https://docs.google.com/document/d/1TSD_arNmRhkE10pNvNlMuq6hC8kP0ORHvDvll83p9HU/edit)
+1. Provide gameplay videos for ads (preferred via Google Drive) with game sounds (if there are ones)
+2. Two videos are needed in a Format of 1080X1350:
+&nbsp;&nbsp;&nbsp;A. Length of 2 minutes of different fails.
+&nbsp;&nbsp;&nbsp;B. Length of 3 minutes which include normal play, expert play and satisfying moments (Unique scenes and highlights of the game).
+3. Recording tips: 
+Please use the official Unity package called “Unity Recorder”.
+This package allows you to capture footage directly from the engine in all of the required resolutions, without any need for external software. You can install it from the package manager under the Unity Registry packages.    
+  - Once installed you can access it here (Window > General > Recorder > Recorder Window):
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![recorderWindow](images/recorderWindow.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![recorderWindow](images/record.png)
+  - Click “Add Recorder” - make sure you add a Movie Sequence and remove the Image Sequence if there is one. 
+  - Source - Game View
+  - Switch target fps to 60/30 .
+  - Make sure to change the output resolution to “Costum”. Change to the desired resolution (W1080xH1350) and record from the game view.
+  - Press “Start Recording”, the game should start and the engine will record.
+  - Reach your new captured footage file from the selected folder.
+  - For further information regarding the tool, see the official unity guide: About Unity recorder.
 
 ## 4. SDK Implementation
 Please remove all other SDK’s before implementing Moonlight SDK
