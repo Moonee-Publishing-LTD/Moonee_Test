@@ -10,7 +10,7 @@ Please feel free to contact us with any questions, to request further informatio
 The KPI’s will determine the game’s potential and provide critical DATA. 
 DATA is MOONEE’s key for decision making. 
 
-# Prototype Test Instructions: 
+# Prototype Test Instructions:   
 **Please remove all other SDK’s before implementing Moon SDK!**
 #
 
