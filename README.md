@@ -36,34 +36,35 @@ It’s Not mandatory for the game to be live yet in the store for this part
 ### Facebook
 Make sure to follow all the following steps:  
 
-A. Creating a game in the facebook UI:    
+1. Creating a game in the facebook UI:    
 [https://developers.facebook.com/apps](https://developers.facebook.com/apps)  
 
-B. Create an app:
+2. Create an app:
    The following manula by Meta is explaning how to create an app.
    [https://developers.facebook.com/docs/development/create-an-app/](https://developers.facebook.com/docs/development/create-an-app/)  
    When you need to choose they type of the app, choose the Other > Gaming app. 
 
-C. Go to Settings > Basic and fill the needed info
+3. Go to Settings > Basic and fill the needed info
 
-D. Create a valid privacy policy and User data deletion:
+4. Create a valid privacy policy and User data deletion:
    Create Privacy policy on: [https://app-privacy-policy-generator.firebaseapp.com/](https://app-privacy-policy-generator.firebaseapp.com/)
    After creating, downloading it and opening it on Google Docs. 
    Under "File" choose "Publish to the web" and it will create you a Privacy Policy link.
    Insert the created link on Both privacy policy and User data deletion sections, and choose the needed Category and Sub-Category.
-E. Choose and add your platform: 
+   ![Basic](images/facebookBasic.png)
+5. Choose and add your platform: 
    Android fill the package name (it’s the bundle), and on IOS fill App’s ID and Bundle ID.
-F. Other sections or to confirm ownership are not mandatory so don’t worry about it!
+6. Other sections or to confirm ownership are not mandatory so don’t worry about it!
 * Click “Save Changes”
 
-G. Add Moonee’s Ad Account ID
+7. Add Moonee’s Ad Account ID
 
 For us to be able to test your game, we need to connect it to our Ad Account:
 Go to Settings -> Advanced and fill the needed info:
 Scroll down to the section “Advertising Accounts” and insert:
 267507499172466
 
-H. Activate your app. 
+8. Activate your app. 
 Make sure to set the status on the first row to”Live”
 Click Save
 
