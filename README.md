@@ -10,9 +10,19 @@ Please feel free to contact us with any questions, to request further informatio
 The KPI’s will determine the game’s potential and provide critical DATA. 
 DATA is MOONEE’s key for decision making. 
 
-# General System Requirements for all SDK users: 
+# Prototype Test Instructions: 
 **Please remove all other SDK’s before implementing Moon SDK!**
 #
+
+# Prototype Test Instructions
+1. System Requirements
+2. Platforms Settings
+3. Video Creatives
+4. SDK Implementation
+5. DATA Safety
+6. Ready For Testing
+
+## 1. System Requirements
 - Unity Editor 2021.2 or higher 2021 LTS version
 - Android:
   Minimum SDK: Lollipop 5.0 (API 22)  
@@ -20,13 +30,8 @@ DATA is MOONEE’s key for decision making.
 - iOS: 
   Target minimum iOS Version: 13.0   
   Scripting backend: IL2CPP
-# Prototype Test Instructions
-1. Platforms Settings
-2. Video Creatives
-3. SDK Implementation
-4. DATA Safety
-5. Ready For Testing
-## 1. Platforms Settings
+  
+## 2. Platforms Settings
 It’s Not mandatory for the game to be live yet in the store for this part  
 ### Facebook
 Make sure to follow all the steps in this guide.
@@ -44,7 +49,7 @@ Afterwards share in the Slack channel your FB App ID.
 4. Grant us Admin access to the app on Game Analytics: 
     - Settings -> Users -> Invite users -> for this user erez@moonee.io
 
-## 2. Video Creatives
+## 3. Video Creatives
 Provide gameplay videos for ads (preferred via Google Drive) with game sounds (if there are ones)
 
 Two videos are needed in a Format of 1080X1350:
@@ -52,11 +57,11 @@ Two videos are needed in a Format of 1080X1350:
 2. Length of 3 minutes which include normal play, expert play and satisfying moments (Unique scenes and highlights of the game).
 [Recording tips](https://docs.google.com/document/d/1TSD_arNmRhkE10pNvNlMuq6hC8kP0ORHvDvll83p9HU/edit)
 
-## 3. SDK Implementation
+## 4. SDK Implementation
 Please remove all other SDK’s before implementing Moonlight SDK
 The letest SDK version is 1.3.5
 Notice: For this test use only Facebook, Game analytics and Adjust SDKs features.
 
-## 4. DATA Safety
-## 5. Ready For Testing
+## 5. DATA Safety
+## 6. Ready For Testing
 
