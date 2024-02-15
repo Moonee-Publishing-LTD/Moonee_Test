@@ -131,7 +131,7 @@ You can download + open the app and check on FB Developer main dashboard if you�
 
 ## SDK Implementation
 <details>
-  <summary>Expand</summary>  
+  <summary></summary>  
 **Please remove all other SDK’s before implementing Moon SDK!**  
 
    1. Downloading the MOON SDK   
@@ -166,7 +166,7 @@ You will get the needed Adjust tokens from your Publisher Manager
 
 ## DATA Safety
 <details>
-  <summary>Expand</summary>
+  <summary></summary>
   
 - For Android: 
 Please make sure your app’s privacy and security practices match the store’s standards.   
@@ -178,7 +178,7 @@ Use this [how-to iOS-guide](https://docs.google.com/document/d/1FpO0OBE2uL9FS098
 
 ## Ready For Testing
 <details>
-  <summary>Expand</summary>
+  <summary></summary>
   
 1. Once you finish all of the above steps and your game is good to go, publish it on Google Play Store/ App Store.
 2. Once the game is live, share in the Slack Channel the game’s store URL and its Facebook App ID.
