@@ -108,7 +108,7 @@ You can download + open the app and check on FB Developer main dashboard if youâ
 
 ## Video Creatives
 <details>
-  <summary>Expand</summary>
+  <summary></summary>
   
 1. Provide gameplay videos for ads (preferred via Google Drive) with game sounds (if there are ones).
 2. Two videos are needed in a format of 1080x1350:
