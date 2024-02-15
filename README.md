@@ -19,8 +19,9 @@ DATA is MOONEE’s key for decision making.
     B. [Game Analytics](#game-analytics)  
   5. [Video Creatives](#video-creatives)
   6. [SDK Implementation](#sdk-implementation)
-  7. [DATA Safety](#data-safety)
-  8. [Ready For Testing](#ready-for-testing)
+  7. [In-Game Fonts](#in-game-fonts)
+  8. [DATA Safety](#data-safety)
+  9. [Ready For Testing](#ready-for-testing)
 </details>
 
 ## System Requirements
@@ -161,6 +162,28 @@ The current version of the MOON SDK is [version 1.3.5](https://drive.google.com/
 
  7. Make sure you filled the mandatory keys for the test under Facebook, Game Analytics and Adjust Basics section:
 You will get the needed Adjust tokens from your Publisher Manager
+
+</details>
+
+## In-Game Fonts
+<details>
+  <summary></summary>  
+In terms of in-game fonts, they must be official fonts from Google Fonts or Liberation Sans from Unity. Follow these steps to ensure compliance with font licensing:
+
+1. Use only fonts from the Google Fonts library or Liberation Sans from Unity.
+2. After selecting the relevant font, ensure you have the license for the game code as a text file.
+3. Rename the license file to the following format: `Fontname_license.txt`.
+4. Place both the font file and its license file in the Fonts directory of your project.
+5. The most common font licenses are OFL (Open Font License) and Apache License.
+6. Copy everything in the StreamingAssets directory to add a new licensed font, which will be automatically added to the build.
+7. Fonts from Google Fonts can be used for both Android and iOS games. You can find them at [Google Fonts](https://fonts.google.com/).
+8. Unity typically has two built-in fonts:
+   * Liberation Sans (free to use)
+   * Arial (note: Arial is not free to use)
+9. Refer to the following guides for embedding custom fonts in games:
+   * Unity - Manual: [Font Assets](https://docs.unity3d.com/Manual/class-Font.html).
+
+By adhering to these guidelines, you ensure that your game uses licensed fonts responsibly and legally.
 
 </details>
 
