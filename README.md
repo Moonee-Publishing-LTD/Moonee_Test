@@ -108,18 +108,18 @@ This package allows you to capture footage directly from the engine in all of th
   - For further information regarding the tool, see the official unity guide: About Unity recorder.
 
 ## 4. SDK Implementation
-#### SDK Implementation Step 1. Downloading the MOON SDK
+### 1. Downloading the MOON SDK
 The current version of the MOON SDK is [version 1.3.5](https://drive.google.com/file/d/1jYZ65BiPbhzySEBcFSuwxP9EGQJkjsfM/view) 
 **Notice: For this test use only Facebook, Game analytics and Adjust SDKs features!**
 
 #
-#### SDK Implementation Step 2. Setting Up Moon SDK
+### 2. Setting Up Moon SDK
 
   1. Import MoonSDK.unitypackage into your unity project.
   
   2. The MoonSDKScene must be the first in the list in the build settings, after initialization it will load the next scene in the list (with index 1).
 
-     ![MoonSDKScene](images/MoonSDKScene.png)
+     ![MoonSDKScene](images/MooneeScene.png)
      
   3. Open MoonSDK settings and fill in all app keys for analytics and advertising services which you want to use and press Check and Sync Settings button
     
@@ -127,10 +127,15 @@ The current version of the MOON SDK is [version 1.3.5](https://drive.google.com/
  
  4. Initialization: Moon SDK is initialized automatically from the Moon SDK scene.
 
- 5. Progression Events: You can track levels progression events in your game using GameAnalytics
-`MoonSDK.TrackLevelEvents(MoonSDK.LevelEvents.Start, 1)`
+ 5. Progression Events:   
+**Levels progression events using Adjust and Moonee's Developer's Dahboard:**  
+`MoonSDK.SendLevelDataStartEvent((GameModel.levelIndex + 1).ToString());`  
+`MoonSDK.SendLevelDataCompleteEvent(LevelStatus.complete, (GameModel.levelIndex + 1).ToString(), LevelResult.win, isContinueLevel);`  
+**Levels progression events using GameAnalytics:**  
+`void MoonSDK.TrackLevelEvents(MoonSDK.LevelEvents eventType, int levelIndex);`
+`MoonSDK.TrackLevelEvents(MoonSDK.LevelEvents.Start, 1);`
 
- 6. Make sure you filled the mandatory keys for the test under Facebook, Game Analytics and Adjust Basics section:
+ 7. Make sure you filled the mandatory keys for the test under Facebook, Game Analytics and Adjust Basics section:
 You will get the needed Adjust tokens from your Publisher Manager
 
 ## 5. DATA Safety
@@ -152,5 +157,5 @@ Use this [how-to iOS-guide](https://docs.google.com/document/d/1FpO0OBE2uL9FS098
   - We get levelDataStrat and levelDataComplete events from the app
 
 
-# Good Luck! May the force be with you!
+# Good Luck! 
 
