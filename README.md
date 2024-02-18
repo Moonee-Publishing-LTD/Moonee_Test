@@ -152,13 +152,17 @@ The current version of the MOON SDK is [version 1.3.5](https://drive.google.com/
  
  6. Initialization: Moon SDK is initialized automatically from the Moon SDK scene.
 
- 7. Progression Events:   
-**Levels progression events using Adjust and Moonee's Developer's Dahboard:**  
-`MoonSDK.SendLevelDataStartEvent((GameModel.levelIndex + 1).ToString());`  
-`MoonSDK.SendLevelDataCompleteEvent(LevelStatus.complete, (GameModel.levelIndex + 1).ToString(), LevelResult.win, isContinueLevel);`  
+ 7. Progression Events:
+    
+**Levels progression events using Adjust and Moonee's Developer's Dahboard:**
+
+      MoonSDK.SendLevelDataStartEvent((GameModel.levelIndex + 1).ToString());  
+      MoonSDK.SendLevelDataCompleteEvent(LevelStatus.complete, (GameModel.levelIndex + 1).ToString(), LevelResult.win, isContinueLevel); 
+
 **Levels progression events using GameAnalytics:**  
-`void MoonSDK.TrackLevelEvents(MoonSDK.LevelEvents eventType, int levelIndex);`
-`MoonSDK.TrackLevelEvents(MoonSDK.LevelEvents.Start, 1);`
+
+      void MoonSDK.TrackLevelEvents(MoonSDK.LevelEvents eventType, int levelIndex);
+      MoonSDK.TrackLevelEvents(MoonSDK.LevelEvents.Start, 1);
 
  7. Make sure you filled the mandatory keys for the test under Facebook, Game Analytics and Adjust Basics section:
 You will get the needed Adjust tokens from your Publisher Manager
