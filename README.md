@@ -139,7 +139,7 @@ You can download + open the app and check on FB Developer main dashboard if youâ
 **Please remove all other SDKâ€™s before implementing Moon SDK!**  
 
    1. Downloading the MOON SDK   
-The current version of the MOON SDK is [version 1.3.5](https://drive.google.com/file/d/1jYZ65BiPbhzySEBcFSuwxP9EGQJkjsfM/view)     
+The current version of the MOON SDK is version 1.3.5  (Sent by slack bot)
 **Notice: For this test use only Facebook, Game analytics and Adjust SDKs features!**
   2. Setting Up Moon SDK:
 
