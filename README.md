@@ -22,9 +22,12 @@ Remember, at MOONEE, data is paramount. It's the cornerstone of our decision-mak
     B. [Game Analytics](#game-analytics)  
   5. [Video Creatives](#video-creatives)
   6. [SDK Implementation](#sdk-implementation)
-  7. [In-Game Fonts](#in-game-fonts)
-  8. [DATA Safety](#data-safety)
-  9. [Ready For Testing](#ready-for-testing)
+  7. [Commen Issues](#commen-issues)
+  8. [In-Game Fonts](#in-game-fonts)
+  9. [DATA Safety](#data-safety)  
+      A. [Android](#android)  
+      B. [iOS](#ios)
+  10. [Ready For Testing](#ready-for-testing)
 </details>
 
 ## System Requirements
@@ -175,9 +178,20 @@ LevelDataCompleteEvent has a few arguments:
       void MoonSDK.TrackLevelEvents(MoonSDK.LevelEvents eventType, int levelIndex);
       MoonSDK.TrackLevelEvents(MoonSDK.LevelEvents.Start, 1);
 
- 7. Make sure you filled the mandatory keys for the test under Facebook, Game Analytics and Adjust Basics section:
+ 8. Make sure you filled the mandatory keys for the test under Facebook, Game Analytics and Adjust Basics section
 You will get the needed Adjust tokens from your Publisher Manager
 
+</details>
+
+## Commen Issues
+<details>
+  <summary></summary>  
+Commen issues can be found here as well as in the "issue" section.
+Please add your comments there as well, to allow other to gain from it.
+
+**Importnat comments:**
+1. Please remove External Dependency manager folder from the project and import the latest one.
+   
 </details>
 
 ## In-Game Fonts
@@ -205,25 +219,71 @@ By adhering to these guidelines, you ensure that your game uses licensed fonts r
 ## DATA Safety
 <details>
   <summary></summary>
-  
-Android:
+
+### Android
+<details>
+  <summary></summary>
 To complete the Data Safety form required by the Google Store, please adhere to the following steps:
 
 Access the Google Play Console for your application.
 Navigate to the "Data safety" section within the console.
-Answer the questions as below:
-**Overview:**
-**Data collection and security:**
-  1. Does your app collect or share any of the required user data types? _Yes_
-      - Is all of the user data collected by your app encrypted in transit? _Yes_
-      - Which of the following methods of account creation does your app support? _My app does not allow users to create an account_
-      - Do you provide a way for users to request that their data is deleted? (Optional) _No_ 
-**Data types:**
+Answer the questions as below:  
+
+**Overview:**  
+Please read the following instructions carefully to ensure that you are not collecting data beyond the parameters outlined below. If, however, you find that you are inadvertently collecting additional data, please promptly contact us for further assistance. It is essential to adhere strictly to the specified data collection guidelines to maintain compliance and transparency with our policies.  
+
+**Data collection and security:**  
+Does your app collect or share any of the required user data types? _Yes_
+  - Is all of the user data collected by your app encrypted in transit? _Yes_
+  - Which of the following methods of account creation does your app support? _My app does not allow users to create an account_
+  - Do you provide a way for users to request that their data is deleted? (Optional) _No_ 
+
+**Data types:**  
 Select all of the user data types collected or shared by your app.
+- Location: _None_
+- Personal info: _None_
+- Financial info: _None_
+- Health and fitness: _None_
+- Messages: _None_
+- Photos and videos: _None_
+- Audio files: _None_
+- Files and docs: _None_
+- Calendar: _None_
+- Contacts: _None_
+- App activity: App interactions (Information about how a user interacts with your app. For example, the number of times they visit a page, or what they tap on.)
+- Web browsing: _None_
+- App info and performance: Crash logs
+- Device or other IDs: Device or other IDs
+
+**Data usage and handling** _Manage in the errow for both types:_
+
+App Activity / App interactions:
+  - Is this data collected, shared, or both? _Collected_
+  - Is this data processed ephemerally? _Yes, this collected data is processed ephemerally_
+  - Is this data required for your app, or can users choose whether it's collected? _Data collection is required_
+  - Why is this user data collected? App functionality, Analytics, Advertising or marketing
+
+Device or other IDs:
+  - Is this data collected, shared, or both? _Collected_
+  - Is this data processed ephemerally? _Yes, this collected data is processed ephemerally_
+  - Is this data required for your app, or can users choose whether it's collected? _Data collection is required_
+  - Why is this user data collected? _App functionality, Analytics, Advertising or marketing_
+    
+**Preview:**  
+See that all of the above is correct, and press save.
+If you can't see the save button, there are 3dots there, that "save" is one othe options in them.
+
+</details>
 
 
+### iOS
+<details>
+  <summary></summary>
+  
 Please make sure your app’s privacy and security practices match the store’s standards. 
 Use this [how-to iOS-guide](https://docs.google.com/document/d/1FpO0OBE2uL9FS098HBX1sfBWrDMZFtc8t3dmmAclOGc/edit).
+  
+</details>  
 </details>
 
 ## Ready For Testing
