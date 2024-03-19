@@ -279,10 +279,61 @@ If you can't see the save button, there are 3dots there, that "save" is one othe
 ### iOS
 <details>
   <summary></summary>
-  
-Please make sure your app’s privacy and security practices match the store’s standards. 
-Use this [how-to iOS-guide](https://docs.google.com/document/d/1FpO0OBE2uL9FS098HBX1sfBWrDMZFtc8t3dmmAclOGc/edit).
-  
+To complete the Data Safety form required by the App Store, please adhere to the following steps:
+
+Access the App Play Connect for your application.
+Navigate to the "App Privacy" section within the console.
+Answer the questions as below:  
+
+**Privacy Policy**
+User Privacy Choices URL: Please provide Moonne's URL: https://moonee.io/privacy-policy/
+
+**Data Collection**
+Do you or your third-party partners collect data from this app? _Yes, we collect data from this app_
+
+**Data Types**
+- Contact Info: _None_
+- Health & Fitness: _None_
+- Financial Info: _None_
+- Location: _None_
+- Sensitive Info: _None_
+- Contacts: _None_
+- User Content: _None_
+- Browsing History: _None_
+- Search History: _None_
+- Identifiers: _Device ID_
+- Usage Data: _Product Interaction,Advertising Data_
+- Diagnostics: _Crash Data, Performance Data_
+- Surroundings: _None_
+- Body: _None_
+- Other Data: _None_
+
+
+Identifiers/ Device ID:
+- Indicate how device IDs collected from this app are being used by you or your third-party partners? _Third-Party Advertising,Developer’s Advertising or Marketing_
+- Are the device IDs collected from this app linked to the user’s identity? _No, device IDs collected from this app are not linked to the user’s identity_
+- Do you or your third-party partners use device IDs for tracking purposes? _Yes, we use device IDs for tracking purposes_
+
+Usage Data/ Product Interaction:
+- Indicate how Product Interaction collected from this app are being used by you or your third-party partners? _Third-Party Advertising, Developer’s Advertising or Marketing, Analytics,Product Personalization, App Functionality_
+- Are the Product Interaction data collected from this app linked to the user’s identity? _No, Product Interaction data collected from this app are not linked to the user’s identity_
+- Do you or your third-party partners use device IDs for tracking purposes? _Yes, we use device IDs for tracking purposes_
+
+Usage Data/ Advertising Data:
+- Indicate how Advertising Data collected from this app are being used by you or your third-party partners? _Third-Party Advertising,Developer’s Advertising or Marketing, Analytics,Product Personalization, App Functionality_
+- Are the Advertising Data collected from this app linked to the user’s identity? _No, Advertising Data collected from this app are not linked to the user’s identity_
+- Do you or your third-party partners use Advertising Data for tracking purposes? _Yes, we use Advertising Data for tracking purposes_
+
+Diagnostics/ Crash Data:
+- Indicate how crash data collected from this app are being used by you or your third-party partners? _Developer’s Advertising or Marketing, Analytics_
+- Are the crash data collected from this app linked to the user’s identity? _No, crash data collected from this app are not linked to the user’s identity_
+- Do you or your third-party partners use crash data for tracking purposes? _Yes, we use crash data for tracking purposes_
+
+Diagnostics/ Performance Data:
+- Indicate how performance data collected from this app are being used by you or your third-party partners? _Third-Party Advertising, Developer’s Advertising or Marketing, Analytics,Product Personalization, App Functionality_
+- Are the performance data collected from this app linked to the user’s identity? _No, performance data collected from this app are not linked to the user’s identity_
+- Do you or your third-party partners use performance data for tracking purposes? _Yes, we use performance data for tracking purposes_
+
 </details>  
 </details>
 
