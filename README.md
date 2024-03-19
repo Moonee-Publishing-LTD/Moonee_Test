@@ -285,13 +285,13 @@ Access the App Play Connect for your application.
 Navigate to the "App Privacy" section within the console.
 Answer the questions as below:  
 
-**Privacy Policy**
+**Privacy Policy**  
 User Privacy Choices URL: Please provide Moonne's URL: https://moonee.io/privacy-policy/
 
-**Data Collection**
+**Data Collection**  
 Do you or your third-party partners collect data from this app? _Yes, we collect data from this app_
 
-**Data Types**
+**Data Types**  
 - Contact Info: _None_
 - Health & Fitness: _None_
 - Financial Info: _None_
