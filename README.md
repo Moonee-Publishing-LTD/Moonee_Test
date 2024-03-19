@@ -206,10 +206,22 @@ By adhering to these guidelines, you ensure that your game uses licensed fonts r
 <details>
   <summary></summary>
   
-- For Android: 
-Please make sure your app’s privacy and security practices match the store’s standards.   
-Use this [how-to-Android-guide](https://docs.google.com/document/d/1xN6lX-wWwJfFPhiAr2oifMPD_mAtMWC39qZdFRv2uFY/edit)   
-- For IOS:
+Android:
+To complete the Data Safety form required by the Google Store, please adhere to the following steps:
+
+Access the Google Play Console for your application.
+Navigate to the "Data safety" section within the console.
+Answer the questions as below:
+**Overview:**
+**Data collection and security:**
+  1. Does your app collect or share any of the required user data types? _Yes_
+      - Is all of the user data collected by your app encrypted in transit? _Yes_
+      - Which of the following methods of account creation does your app support? _My app does not allow users to create an account_
+      - Do you provide a way for users to request that their data is deleted? (Optional) _No_ 
+**Data types:**
+Select all of the user data types collected or shared by your app.
+
+
 Please make sure your app’s privacy and security practices match the store’s standards. 
 Use this [how-to iOS-guide](https://docs.google.com/document/d/1FpO0OBE2uL9FS098HBX1sfBWrDMZFtc8t3dmmAclOGc/edit).
 </details>
