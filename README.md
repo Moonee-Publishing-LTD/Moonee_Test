@@ -160,19 +160,30 @@ The current version of the MOON SDK is version 1.3.5  (link is sent by slack bot
 
  7. Progression Events:
     
-**Levels progression events using Adjust and Moonee's Developer's Dahboard:**
+**Levels progression events using Adjust:**  
+We utilize two key events related to game level progression: LevelDataStartEvent and LevelDataCompleteEvent.
 
-      MoonSDK.SendLevelDataStartEvent((GameModel.levelIndex + 1).ToString());  
-      MoonSDK.SendLevelDataCompleteEvent(LevelStatus.complete, (GameModel.levelIndex + 1).ToString(), LevelResult.win, isContinueLevel); 
+LevelDataStartEvent is sent at the begginig of the level.
 
+     MoonSDK.SendLevelDataStartEvent((GameModel.levelIndex + 1).ToString());
 
-LevelDataCompleteEvent has a few arguments:
-  1. **LevelStatus** - Indicates the current status of the level, which could be "start" when the level begins, "fail" if the player fails to complete it, or "complete" if the player finishes it without winning.
-  2. **LevelResult** - Represents the outcome of the level, which could be "win" if the player successfully completes it or "fail" if the player fails to complete it.
-  3. **isContinueLevel** - A boolean argument that indicates whether the player is continuing the level from where they left off (true) or starting it from the beginning (false). This is particularly useful for long idle levels or when there's a revive   
+LevelDataCompleteEvent  is sent at the end of the level:
+1. LevelStatus - Indicates the current status of the level, which could be "start" when the level begins, "fail" if the player fails to complete it, or "complete" if the player finishes it without winning.
+2. LevelResult - Represents the outcome of the level, which could be "win" if the player successfully completes it or "fail" if the player fails to complete it.
+3. isContinueLevel - A boolean argument that indicates whether the player is continuing the level from where they left off (true) or starting it from the beginning (false). This is particularly useful for long idle levels or when there's a revive   
      option. If the game doesn't have these features, it should be set to false by default.
+4. Data related to time spent in the game's store
 
+Use it as described below:
 
+     MoonSDK.SendLevelDataCompleteEvent(LevelStatus.complete, (GameModel.levelIndex + 1).ToString(), LevelResult.win, isContinueLevel);
+
+For the in game store data, use the following (the rest is aoutomatic):
+
+      MoonSDK.OpenInGameStore(); // Execute when user opens the store
+      MoonSDK.CloseInGameStore(); // Execute when user closes the store
+
+      
 **Levels progression events using GameAnalytics:**  
 
       void MoonSDK.TrackLevelEvents(MoonSDK.LevelEvents eventType, int levelIndex);
