@@ -139,7 +139,8 @@ You can download + open the app and check on FB Developer main dashboard if you�
 ## SDK Implementation
 <details>
   <summary></summary>  
-**Please remove all other SDK’s before implementing Moon SDK!**  
+**Please remove all other SDK’s before implementing Moon SDK!**    
+
 
    1. Downloading the MOON SDK   
 The current version of the MOON SDK is version 1.3.6  (link is sent by slack bot)  
@@ -152,13 +153,15 @@ The current version of the MOON SDK is version 1.3.6  (link is sent by slack bot
 
      ![MoonSDKScene](images/MooneeScene.png)
      
-  5. Open MoonSDK settings and fill in all app keys for analytics and advertising services which you want to use and press Check and Sync Settings button
+  5. Please include the following integrations in Unity SDK testing: Game Analytics, Facebook, and Adjust Basic. Note: Remaining integrations for advanced testing.
+
+  6. Open MoonSDK settings and fill in all app keys for analytics and advertising services which you want to use and press Check and Sync Settings button
     
      ![SyncSettings](images/SyncSettings.png)
  
- 6. Initialization: Moon SDK is initialized automatically from the Moon SDK scene.
+ 7. Initialization: Moon SDK is initialized automatically from the Moon SDK scene.
 
- 7. Progression Events:
+ 8. Progression Events:
     
 **Levels progression events using Adjust:**  
 We utilize two key events related to game level progression: LevelDataStartEvent and LevelDataCompleteEvent.
