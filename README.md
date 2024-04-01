@@ -205,6 +205,7 @@ Please add your comments there as well, to allow other to gain from it.
 
 **Importnat comments:**
 1. Please remove External Dependency manager folder from the project and import the latest one.
+2. After adding the keys and tokens, amke sure **not** to disable the checkmarks for the basic
    
 </details>
 
