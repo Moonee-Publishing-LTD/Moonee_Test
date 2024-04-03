@@ -206,7 +206,8 @@ Please add your comments there as well, to allow other to gain from it.
 **Importnat comments:**
 1. Please remove External Dependency manager folder from the project and import the latest one.
 2. After adding the keys and tokens, amke sure **not** to disable the checkmarks for the basic.
-3. Use only Facebook, Game Analytics and Adjust Basic. Leave all other sections in the inspector unmarked.  
+3. Use only Facebook, Game Analytics and Adjust Basic. Leave all other sections in the inspector unmarked.
+4. If you encounter any issues with Firebase, Applovin or any other, remove the check mark from the corresponding box in that section. 
    
 </details>
 
