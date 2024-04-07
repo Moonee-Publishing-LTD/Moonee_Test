@@ -109,7 +109,7 @@ Game Analytics data serves as a crucial tool for determining retention rates and
    - Fail
 3. Make sure to have the level events naming in the format:
    - “Level0001”
-   - “Level0002”
+   - “Level0002”  
    (Make sure to start from level 0001 and not from 0000)
 4. Grant us Admin access to the app on Game Analytics: 
    - Settings -> Users -> Invite users -> for this user erez@moonee.io
