@@ -97,7 +97,10 @@ You can download + open the app and check on FB Developer main dashboard if youâ
 
   ### Game Analytics
   <details>
-    <summary>Expand</summary>  
+    <summary>Expand</summary>
+    
+Game Analytics data serves as a crucial tool for determining retention rates and playtime. Progression events are instrumental in this determination, operating within the backend infrastructure. Currently, it's imperative that every level (or minute, particularly in Idle games) incorporates Game Analytics events and Adjust events for optimal tracking and analysis.
+
 
 1. Create a Game analytics account and asset using this [link](https://tool.gameanalytics.com/login?redirect=%252F).
 2. If your game is level-based, make sure to have the events:
@@ -207,7 +210,8 @@ Please add your comments there as well, to allow other to gain from it.
 1. Please remove External Dependency manager folder from the project and import the latest one.
 2. After adding the keys and tokens, amke sure **not** to disable the checkmarks for the basic.
 3. Use only Facebook, Game Analytics and Adjust Basic. Leave all other sections in the inspector unmarked.
-4. If you encounter any issues with Firebase, Applovin or any other, remove the check mark from the corresponding box in that section. 
+4. If you encounter any issues with Firebase, Applovin or any other, remove the check mark from the corresponding box in that section.
+5. Use both methods of progression events: to Adjust and to Game Analytics. Soon we will be changing it to one method sending to both platforms.
    
 </details>
 
