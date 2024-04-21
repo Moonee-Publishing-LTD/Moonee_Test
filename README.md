@@ -34,7 +34,7 @@ Remember, at MOONEE, data is paramount. It's the cornerstone of our decision-mak
 <details>
   <summary></summary>
   
-  - Unity Editor 2021.2 or higher (2021 LTS version)
+  - Unity Editor 2021.2 or higher (2022 LTS version)
   - Android:
     - Minimum SDK: Lollipop 5.0 (API 22)
     - Scripting backend: IL2CPP
