@@ -91,7 +91,15 @@ For us to be able to test your game, we need to connect it to our Ad Account:
 
 You can download + open the app and check on FB Developer main dashboard if you’re seeing data of last date installs.
 
-#### 9: Share in the Slack channel your FB App ID.
+#### 9: Share in the Slack IDs:
+1. Log into the [Meta developer portal.](https://developers.facebook.com/) 
+2. Navigate to My Apps in the top right corner.
+3. Select the app for which you would like to access your decryption key.
+4. Select Settings > Basic.
+5. Scroll to the Android section.
+6. Look for Install Referrer Decryption Key under the Google Play header.
+7. Copy the Install Referrer Decryption Key and the Facebook App ID and share them in the slack channel
+![FB_for_devs_decryption_key](images/FB_for_devs_decryption_key.png)
 
   </details>
 
