@@ -91,7 +91,7 @@ For us to be able to test your game, we need to connect it to our Ad Account:
 
 You can download + open the app and check on FB Developer main dashboard if you’re seeing data of last date installs.
 
-#### 9: Share in the Slack IDs:
+#### 9: Share IDs in the Slack Channel:
 1. Log into the [Meta developer portal.](https://developers.facebook.com/) 
 2. Navigate to My Apps in the top right corner.
 3. Select the app for which you would like to access your decryption key.
