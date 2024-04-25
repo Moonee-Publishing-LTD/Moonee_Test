@@ -154,7 +154,7 @@ Game Analytics data serves as a crucial tool for determining retention rates and
 
 
    1. Downloading the MOON SDK   
-The current version of the MOON SDK is version 1.3.6  (link is sent by slack bot)  
+The current version of the MOON SDK is version 1.3.7  (link is sent by slack bot)  
 **Notice: For this test use only Facebook, Game analytics and Adjust SDKs features!**
   2. Setting Up Moon SDK:
 
