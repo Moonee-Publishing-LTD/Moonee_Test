@@ -179,7 +179,7 @@ We utilize two key events related to game level progression: LevelDataStartEvent
 
 LevelDataStartEvent is sent at the begginig of the level.
 
-     MoonSDK.SendLevelDataStartEvent((GameModel.levelIndex + 1).ToString());
+     MoonSDK.SendLevelDataStartEvent(levelIndex, coinsAmount, purchaseIDs);
 
 LevelDataCompleteEvent  is sent at the end of the level:
 1. LevelStatus - Indicates the current status of the level, which could be "start" when the level begins, "fail" if the player fails to complete it, or "complete" if the player finishes it without winning.
@@ -190,7 +190,7 @@ LevelDataCompleteEvent  is sent at the end of the level:
 
 Use it as described below:
 
-     MoonSDK.SendLevelDataCompleteEvent(LevelStatus.complete, (GameModel.levelIndex + 1).ToString(), LevelResult.win, isContinueLevel);
+     MoonSDK.SendLevelDataCompleteEvent(LevelStatus.complete, levelIndex, LevelResult.win, isContinue, coinsAmount);
 
 For the in game store data, use the following (the rest is aoutomatic):
 
