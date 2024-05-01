@@ -179,9 +179,12 @@ We utilize two key events related to game level progression: LevelDataStartEvent
 
 `LevelDataStartEvent` is sent at the beginning of the level
 1. `coinsAmount` - Indicates the main currency current amount (In level 1, if the users start with 0, send 0.)
-2. `purchaseIDs` - Indicates which in-app purchases the user made before starting this level, since the last time this event was sent.
+2. `purchaseIDs` - Indicates which in-app purchases the user made before starting this level, since the last time this event was sent - If you don't have IAP in the game at this stage, don't use it.
+
+Use it as described below:
 
      MoonSDK.SendLevelDataStartEvent(levelIndex, coinsAmount, purchaseIDs);
+
 
 `LevelDataCompleteEvent`  is sent at the end of the level:
 1. `LevelStatus` - Indicates the current status of the level, which could be "start" when the level begins, "fail" if the player fails to complete it, or "complete" if the player finishes it without winning.
