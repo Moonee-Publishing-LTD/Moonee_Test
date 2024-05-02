@@ -7,7 +7,7 @@ Welcome aboard! Whether you're a seasoned developer or just starting out, this g
 
 Don't hesitate to reach out to us with any questions or requests for further information. We're here to support you and your team every step of the way, from prototyping to testing. Before committing extensive resources, we aim to gauge your app's potential in terms of retention, CPI, playtime, and other key performance indicators (KPIs).
 
-Our test will target US users and will conclude within a maximum of 4 days, providing invaluable insights into your app's potential.
+Our test will target US users and will conclude within a maximum of 5 full days, providing invaluable insights into your app's potential.
 
 Remember, at MOONEE, data is paramount. It's the cornerstone of our decision-making process. We look forward to collaborating with you and leveraging data to drive success!
 
