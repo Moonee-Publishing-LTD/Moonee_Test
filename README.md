@@ -228,7 +228,14 @@ Please add your comments there as well, to allow other to gain from it.
 4. If you encounter any issues with Firebase, Applovin or any other, remove the check mark from the corresponding box in that section.
 5. Use both methods of progression events: to Adjust and to Game Analytics. Soon we will be changing it to one method sending to both platforms.
 6. When updating the SDK version, pleaese remove MoonSDK folder and after that import the new package.
-   
+7. If you are reciving an error of an adaptor: missing id, or anyother adaptor case, remove that missed downloaded adptor.
+An exsample for adaptor error
+![adaptor_error](images/adaptor_error.png)
+Open the 
+![![adaptor_error](images/adaptor_error.png)]
+![removing_adaptor_location](images/removing_adaptor_location.png)
+![removing_adaptor](images/removing_adaptor.png)
+
 </details>
 
 ## In-Game Fonts
