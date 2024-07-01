@@ -172,7 +172,11 @@ The current version of the MOON SDK is version 1.3.7  (link is sent by slack bot
  
  7. Initialization: Moon SDK is initialized automatically from the Moon SDK scene.
 
- 8. Progression Events:
+ 8. Remove Google Adapter (important since you don't use monetization), See the picture below:
+
+  ![GoogleAdaptor](images/GoogleAdaptor.png)
+
+ 9. Progression Events:
     
 **Levels progression events using Adjust:**  
 We utilize two key events related to game level progression: LevelDataStartEvent and LevelDataCompleteEvent.
@@ -229,6 +233,7 @@ Please add your comments there as well, to allow other to gain from it.
 5. Use both methods of progression events: to Adjust and to Game Analytics. Soon we will be changing it to one method sending to both platforms.
 6. When updating the SDK version, pleaese remove MoonSDK folder and after that import the new package.
 7. If you are reciving an error of an adaptor: missing id, or anyother adaptor case, remove that missed downloaded adptor.
+8. Since you are not using monetization you need to remove Google Adapter, See how in SDK implementations section. 
 
 
 </details>
