@@ -176,6 +176,10 @@ The current version of the MOON SDK is version 1.3.7  (link is sent by slack bot
 
   ![GoogleAdaptor](images/GoogleAdaptor.png)
 
+  Located in:
+
+ ![removing_adaptor_loaction](images/removing_adaptor_loaction.png)
+
  9. Progression Events:
     
 **Levels progression events using Adjust:**  
