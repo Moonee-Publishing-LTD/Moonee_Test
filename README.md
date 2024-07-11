@@ -22,12 +22,14 @@ Remember, at MOONEE, data is paramount. It's the cornerstone of our decision-mak
     B. [Game Analytics](#game-analytics)  
   5. [Video Creatives](#video-creatives)
   6. [SDK Implementation](#sdk-implementation)
-  7. [Commen Issues](#commen-issues)
-  8. [In-Game Fonts](#in-game-fonts)
-  9. [DATA Safety](#data-safety)  
+  7. [Progression Events](#progression-events)
+  8. [Commen Issues](#commen-issues)
+  9. [In-Game Fonts](#in-game-fonts)
+  10. [DATA Safety](#data-safety)  
       A. [Android](#android)  
-      B. [iOS](#ios)
-  10. [Ready For Testing](#ready-for-testing)
+      B. [iOS](#ios)  
+      C. [Facebbok Data Checkup](#facebbok-data-checkup)  
+  11. [Ready For Testing](#ready-for-testing)
 </details>
 
 ## System Requirements
@@ -154,7 +156,7 @@ Game Analytics data serves as a crucial tool for determining retention rates and
 
 
    1. Downloading the MOON SDK   
-The current version of the MOON SDK is version 1.3.7  (link is sent by slack bot)  
+The current version of the MOON Light SDK is version 1.0.3  (link is sent by slack bot)  
 **Notice: For this test use only Facebook, Game analytics and Adjust SDKs features!**
   2. Setting Up Moon SDK:
 
@@ -180,14 +182,18 @@ The current version of the MOON SDK is version 1.3.7  (link is sent by slack bot
 
  ![removing_adaptor_loaction](images/removing_adaptor_loaction.png)
 
- 9. Progression Events:
+</details>
     
-**Levels progression events using Adjust:**  
-We utilize two key events related to game level progression: LevelDataStartEvent and LevelDataCompleteEvent.
+## Progression Events
+<details>
+  <summary></summary>
+  
+**Levels progression events sends events to Adjust and Game Analytics:**  
+We utilize two key events related to game level progression: `LevelDataStartEvent` and `LevelDataCompleteEvent`.
 
 `LevelDataStartEvent` is sent at the beginning of the level
 1. `coinsAmount` - Indicates the main currency current amount (In level 1, if the users start with 0, send 0.)
-2. `purchaseIDs` - Indicates which in-app purchases the user made before starting this level, since the last time this event was sent - If you don't have IAP in the game at this stage, don't use it.
+2. `purchaseIDs` - Indicates which in-app purchases the user made before starting this level, since the last time this event was sent.
 
 Use it as described below:
 
@@ -196,32 +202,37 @@ Use it as described below:
 
 `LevelDataCompleteEvent`  is sent at the end of the level:
 1. `LevelStatus` - Indicates the current status of the level, which could be "start" when the level begins, "fail" if the player fails to complete it, or "complete" if the player finishes it without winning.
-2. `levelIndex` - Indicates level index
+2. `levelIndex` - Indicates level index, Make sure to send it as `0001` and not in other formats `001` or `1`. Make sure to start from level `0001` and not from `0000`.
 3. `LevelResult` - Represents the outcome of the level, which could be "win" if the player successfully completes it or "fail" if the player fails to complete it.
 4. `isContinue` - A boolean argument that indicates whether the player is continuing the level from where they left off (true) or starting it from the beginning (false). This is particularly useful for long idle levels or when there's a revive   
      option. If the game doesn't have these features, it should be set to false by default.
 5. `coinsAmount` - Shows the current amount of the main currency once the level is completed.
+6. `movesAmount` - The number of moves the player made to complete the level.
 
 Use it as described below:
 
-     MoonSDK.SendLevelDataCompleteEvent(LevelStatus.complete, levelIndex, LevelResult.win, isContinue, coinsAmount);
-
+     MoonSDK.SendLevelDataCompleteEvent(LevelStatus.complete, levelIndex, LevelResult.win, isContinue, coinsAmount, movesAmount);
 
 For the in game store data, use the following (the rest is aoutomatic):
 
       MoonSDK.OpenInGameStore(); // Execute when user opens the store
       MoonSDK.CloseInGameStore(); // Execute when user closes the store
 
+For the in game store data, use the following (the rest is aoutomatic):
+
+      MoonSDK.OpenInGameStore(); // Execute when user opens the store
+      MoonSDK.CloseInGameStore(); // Execute when user closes the store
+
+**Note!** Rememeber to add every Rewarded Video you are using!   
+Adding the folowing part `"rewardedVideoName");` at the end of the function mentioned [here](#rewarded-video-ads-api)
       
-**Levels progression events using GameAnalytics:**  
-
-      void MoonSDK.TrackLevelEvents(MoonSDK.LevelEvents eventType, int levelIndex);
-      MoonSDK.TrackLevelEvents(MoonSDK.LevelEvents.Start, 1);
-
- 8. Make sure you filled the mandatory keys for the test under Facebook, Game Analytics and Adjust Basics section
-You will get the needed Adjust tokens from your Publisher Manager
-
+**Note**: In this part it is crutial to check:  
+     - **A.** Token to Adjust for EACH event  
+     - **B.**  No spaces before and after the token    
+     - **C** Make sure to **copy/paste** the tokens!!!   
+     
 </details>
+
 
 ## Commen Issues
 <details>
@@ -383,6 +394,33 @@ Diagnostics/ Performance Data:
 - Do you or your third-party partners use performance data for tracking purposes? _Yes, we use performance data for tracking purposes_
 
 </details>  
+
+### Facebbok Data heckup 
+<details>
+  <summary></summary>
+  
+In case the Facebook UI is asking to craete data check up, use the following:  
+Go to [https://developers.facebook.com/]  
+Sign in and go to the app, the Data checkup will pop up  
+1. Click on your app and press next  
+![FB1](images/FB1.png)  
+2. Under Do you have data controller choose No, Add data processor  
+![FB2](images/FB2.png)  
+3. Insert Moonee Publishing LTD as your data processor. From the category choose Advertising and Analytics and measurement. From the list of countries choose Israel and Poland  
+![FB3](images/FB3.png)  
+![FB4](images/FB4.png)  
+4. For Have you provided the personal data of user to public authorities choose No, and for Which of the following processes do you have in place choose Required review of the legality of these requests and press next/  
+![FB5](images/FB5.png)  
+5. Tick all the boxes and press next.  
+![FB6](images/FB6.png)  
+6. Insert the Google Play store link and fill in the answers to the rest of the questions as following:  
+![FB7](images/FB7.png)  
+7. Same for iOS, insert the App Store link and fill in the answesr to the rest of the questions as following:  
+![FB8](images/FB8.png)  
+8. Tick the box and finish the checkup  
+![FB9](images/FB9.png)  
+
+</details>
 </details>
 
 ## Ready For Testing
