@@ -115,6 +115,11 @@ You can download + open the app and check on FB Developer main dashboard if youâ
 7. Copy the Install Referrer Decryption Key and the Facebook App ID and share them in the slack channel
 ![FB_for_devs_decryption_key](images/FB_for_devs_decryption_key.png)
 
+#### 10: Add Moonee members to the meta app:
+Accounts:
+ruth.adler.2021 
+nadav.k19
+
   </details>
 
   ### Game Analytics
