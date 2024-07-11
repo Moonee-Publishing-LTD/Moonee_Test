@@ -178,8 +178,10 @@ The current version of the MOON Light SDK is version 1.0.3  (link is sent by sla
 
      ![MoonSDKScene](images/MooneeScene.png)
      
-  5. Use only Facebook, Game Analytics and Adjust Basic. Leave all other sections in the inspector unmarked.  
+  5. Use only Facebook, Game Analytics and Adjust Basic.  
 
+   ![1.0.3](images/1.0.3.png)
+    
   6. Open MoonSDK settings and fill in all app keys for analytics and advertising services which you want to use and press Check and Sync Settings button
     
      ![SyncSettings](images/SyncSettings.png)
