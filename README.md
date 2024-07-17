@@ -69,17 +69,17 @@ In this version we updated the following:
 #### 1: Sign in the [Facebook UI](https://developers.facebook.com/apps)
 
 #### 2: Create an app
-Press "Create app"
-![FBcreateApp](images/FBcreateApp.png)
+Press "Create app"  
+![FB_CreateApp](images/FB_CreateApp.png)    
 The following manual by Meta explains how to create an app: [Manual](https://developers.facebook.com/docs/development/create-an-app/)
 
 #### 3: Use cases:
-When asked "What do you want your app to do?" Choos "other"
-![FBother](images/FBother.png)
+When asked "What do you want your app to do?" Choose "other"  
+![FB_Other](images/FB_Other.png)  
 
 #### 4: App details: 
 Choose "Consumer" 
-![FBConsumer](images/FBConsumer.png)
+![FB_Consumer](images/FB_Consumer.png)
 
 #### 5: Create a valid privacy policy and User data deletion
 
@@ -88,7 +88,7 @@ Choose "Consumer"
   C. Under "File" choose "Publish to the web" and it will create you a Privacy Policy link.  
   D. Go to "App Setting / Basic" 
   D. Insert the created link on Both privacy policy and User data deletion sections, and choose the needed Category and Sub-Category (Hyper Casual, Hybrid etc.).
-![FBprivacy](images/FBprivacy.png)
+![FB_Privacy](images/FB_Privacy.png)
 
 #### 6: Choose and add your platform
 
@@ -99,7 +99,9 @@ Choose "Consumer"
   E. iOS: fill App’s ID and Bundle ID.  
   F. Other sections or to confirm ownership are not mandatory so don’t worry about it!  
   G. Click “Save Changes”.
-  ![Android](images/Android.png)
+   ![FBaddPlatform](images/FBaddPlatform.png)
+   ![FB_ChooseAndroid](images/FB_ChooseAndroid.png)
+   ![FB_ChoosGP](images/FB_ChoosGP.png)
 
 #### 7: Activate your app
 
