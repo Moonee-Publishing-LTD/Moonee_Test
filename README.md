@@ -66,46 +66,58 @@ In this version we updated the following:
   <details>
     <summary>Expand</summary>
 
-#### 1: Creating a game in the [Facebook UI](https://developers.facebook.com/apps)
+#### 1: Sign in the [Facebook UI](https://developers.facebook.com/apps)
 
 #### 2: Create an app
-
+Press "Create app"
+![FBcreateApp](images/FBcreateApp.png)
 The following manual by Meta explains how to create an app: [Manual](https://developers.facebook.com/docs/development/create-an-app/)
 
-When you need to choose the type of the app, choose "Other" > "Gaming app".
+#### 3: Use cases:
+When asked "What do you want your app to do?" Choos "other"
+![FBother](images/FBother.png)
 
-#### 3: Go to Settings > Basic and fill the needed info
+#### 4: App details: 
+Choose "Consumer" 
+![FBConsumer](images/FBConsumer.png)
 
-#### 4: Create a valid privacy policy and User data deletion
+#### 5: Create a valid privacy policy and User data deletion
 
   A. Create Privacy policy on: [this link](https://app-privacy-policy-generator.firebaseapp.com/)  
   B. After creating, download it and open it on Google Docs.  
   C. Under "File" choose "Publish to the web" and it will create you a Privacy Policy link.  
+  D. Go to "App Setting / Basic" 
   D. Insert the created link on Both privacy policy and User data deletion sections, and choose the needed Category and Sub-Category (Hyper Casual, Hybrid etc.).
-![Basic](images/facebookBasic.png)
-#### 5: Choose and add your platform
+![FBprivacy](images/FBprivacy.png)
 
-  A. Android: fill the package name (it’s the bundle), and on iOS fill App’s ID and Bundle ID.  
-  B. Other sections or to confirm ownership are not mandatory so don’t worry about it!  
-  C. Click “Save Changes”.
+#### 6: Choose and add your platform
+
+  A. Go to "App Setting / Basic"
+  B. Scroll to the bottom 
+  C. See "+ Add Platform"
+  D. Android: fill the package name (it’s the bundle),
+  E. iOS: fill App’s ID and Bundle ID.  
+  F. Other sections or to confirm ownership are not mandatory so don’t worry about it!  
+  G. Click “Save Changes”.
   ![Android](images/Android.png)
 
-#### 6: Activate your app
+#### 7: Activate your app
 
 Make sure to set the status on the first row to "Live".
 ![live app](images/liveAppMeta.png)
 
-#### 7: Add Moonee’s Ad Account ID
+#### 8: Add Moonee’s Ad Account ID
 
 For us to be able to test your game, we need to connect it to our Ad Account:  
   a. Go to Settings -> Advanced and fill the needed info:  
   b. Scroll down to the section “Advertising Accounts” and insert Moonee’s Ad Account ID:`267507499172466`.
 ![account](images/AccountID.png)
-#### 8: Verify data
+
+#### 9: Verify data
 
 You can download + open the app and check on FB Developer main dashboard if you’re seeing data of last date installs.
 
-#### 9: Share IDs in the Slack Channel:
+#### 10: Share IDs in the Slack Channel:
 1. Log into the [Meta developer portal.](https://developers.facebook.com/) 
 2. Navigate to My Apps in the top right corner.
 3. Select the app for which you would like to access your decryption key.
@@ -115,7 +127,7 @@ You can download + open the app and check on FB Developer main dashboard if you�
 7. Copy the Install Referrer Decryption Key and the Facebook App ID and share them in the slack channel
 ![FB_for_devs_decryption_key](images/FB_for_devs_decryption_key.png)
 
-#### 10: Add Moonee members to the meta app:
+#### 11: Add Moonee members to the meta app:
 Accounts:
 ruth.adler.2021 
 nadav.k19
