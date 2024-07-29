@@ -199,7 +199,7 @@ The current version of the MOON Light SDK is version 1.0.3  (link is sent by sla
      
   5. Use only Facebook, Game Analytics and Adjust Basic.  
 
-   ![1.0.3](images/1.0.3.png)
+     ![1.0.3](images/1.0.3.png)
     
   6. Open MoonSDK settings and fill in all app keys for analytics and advertising services which you want to use and press Check and Sync Settings button
     
@@ -207,13 +207,6 @@ The current version of the MOON Light SDK is version 1.0.3  (link is sent by sla
  
  7. Initialization: Moon SDK is initialized automatically from the Moon SDK scene.
 
- 8. Remove Google Adapter (important since you don't use monetization), See the picture below:
-
-  ![GoogleAdaptor](images/GoogleAdaptor.png)
-
-  Located in:
-
- ![removing_adaptor_loaction](images/removing_adaptor_loaction.png)
 
 </details>
     
