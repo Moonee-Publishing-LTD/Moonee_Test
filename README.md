@@ -228,7 +228,7 @@ Use it as described below:
 
 `LevelDataCompleteEvent`  is sent at the end of the level:
 1. `LevelStatus` - Indicates the current status of the level, which could be "start" when the level begins, "fail" if the player fails to complete it, or "complete" if the player finishes it without winning.
-2. `levelIndex` - Indicates level index, Make sure to send it as `0001` and not in other formats `001` or `1`. Make sure to start from level `0001` and not from `0000`.
+2. `levelIndex` - Indicates level index, Make sure to send it as 1 int. Since we are sending that to GA, the SDK will trasfer that to 0001 to be allgned with Game Analytics format. Make sure to start from level 1 and not from 0.
 3. `LevelResult` - Represents the outcome of the level, which could be "win" if the player successfully completes it or "fail" if the player fails to complete it.
 4. `isContinue` - A boolean argument that indicates whether the player is continuing the level from where they left off (true) or starting it from the beginning (false). This is particularly useful for long idle levels or when there's a revive   
      option. If the game doesn't have these features, it should be set to false by default.
