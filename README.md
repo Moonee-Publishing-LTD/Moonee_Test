@@ -58,9 +58,6 @@ In this version we updated the following:
 </details>
 
 ## Platform Settings
-<details>
-  <summary></summary>
-  It’s not mandatory for the game to be live yet in the store for this part.
 
   ### Facebook
   <details>
@@ -155,7 +152,6 @@ Game Analytics data serves as a crucial tool for determining retention rates and
 4. Grant us Admin access to the app on Game Analytics: 
    - Settings -> Users -> Invite users -> for this user erez@moonee.io
   </details>
-</details>
 
 ## Video Creatives
 <details>
