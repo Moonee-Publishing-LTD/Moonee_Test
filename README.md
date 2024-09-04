@@ -12,13 +12,11 @@ Our test will target US users and will conclude within a maximum of 5 full days,
 Remember, at MOONEE, data is paramount. It's the cornerstone of our decision-making process. We look forward to collaborating with you and leveraging data to drive success!
 
 
-### The current version of the Moon Light SDK is 1.0.3
-Published at 11.07.2024
+### The current version of the Moon Light SDK is 1.0.4
+Published at 04.09.2024
 
 In this version we updated the following:  
-1. Facebook update
-2. Counter in a level complete event
-3. Sending level events to adjust and Game Analytics in one function.
+1. Error fixing
 
 
 # Prototype Test Instructions
