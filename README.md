@@ -131,12 +131,13 @@ nadav.k19
 
   </details>
 
-  ### Game Analytics
+  ### Game Analytics 
   <details>
     <summary>Expand</summary>
     
 Game Analytics data serves as a crucial tool for determining retention rates and playtime. Progression events are instrumental in this determination, operating within the backend infrastructure. Currently, it's imperative that every level (or minute, particularly in Idle games) incorporates Game Analytics events and Adjust events for optimal tracking and analysis.
-
+The SDK is sending the events automatically to GA from progression events part. If for some reason this is not working, let us know. 
+This section is here for cases where you are not using the events methods.
 
 1. Create a Game analytics account and asset using this [link](https://tool.gameanalytics.com/login?redirect=%252F).
 2. If your game is level-based, make sure to have the events:
