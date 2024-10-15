@@ -126,9 +126,10 @@ You can download + open the app and check on FB Developer main dashboard if youâ
 
 #### 11: Add Moonee members to the meta app:
 Accounts:
-ruth.adler.2021 
-nadav.k19
-
+ruth.adler.2021   
+nadav.k19  
+facundo.u@moonee.io
+![FB_add_users](images/FB_add_users.png)
   </details>
 
   ### Game Analytics 
