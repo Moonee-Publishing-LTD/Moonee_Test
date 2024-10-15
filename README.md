@@ -125,11 +125,14 @@ You can download + open the app and check on FB Developer main dashboard if youâ
 ![FB_for_devs_decryption_key](images/FB_for_devs_decryption_key.png)
 
 #### 11: Add Moonee members to the meta app:
-Accounts:
-ruth.adler.2021   
-nadav.k19  
-facundo.u@moonee.io
+Accounts:  
+1. ruth.adler.2021 OR ruth.a@moonee.io  
+2. nadav.k19  OR nadav.k@moonee.io  
+3. facundo.u@moonee.io  
+
 ![FB_add_users](images/FB_add_users.png)
+
+
   </details>
 
   ### Game Analytics 
