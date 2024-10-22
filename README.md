@@ -128,7 +128,7 @@ You can download + open the app and check on FB Developer main dashboard if youâ
 Accounts:  
 1. ruth.adler.2021 OR ruth.a@moonee.io  
 2. nadav.k19  OR nadav.k@moonee.io  
-3. facundo.u@moonee.io  
+3. facundourq.m OR facundo.u@moonee.io  
 
 ![FB_add_users](images/FB_add_users.png)
 
