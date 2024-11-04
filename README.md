@@ -160,13 +160,56 @@ This section is here for cases where you are not using the events methods.
 <details>
   <summary></summary>
   
-1. Provide gameplay videos for ads (preferred via Google Drive) with game sounds (if there are ones).
-2. Two videos are needed in a format of 1080x1350:
-   A. Length of 2 minutes of different fails.
-   B. Length of 3 minutes which include normal play, expert play, and satisfying moments (Unique scenes and highlights of the game).
-3. Recording tips:
-   - Please use the official Unity package called “Unity Recorder”. This package allows you to capture footage directly from the engine in all of the required resolutions, without any need for external software. You can install it from the package manager under the Unity Registry packages.
-   - Once installed you can access it here (Window > General > Recorder > Recorder Window):
+Here's a re-organized version of the instructions for creating gameplay videos for ads:
+
+---
+
+### Gameplay Video Requirements
+
+1. **Video Format & Details**:
+   - **Resolution**: 1080x1350
+   - **File Format**: MP4
+   - **Platform**: Testing on Facebook, so ensure all UI and game details are fully visible and not cut off.
+   - **File Size**: Keep file sizes manageable for easy downloading.
+
+2. **Video Content**:
+   - **Video A**: 2 minutes of fail moments.
+   - **Video B**: 3 minutes showing:
+     - Normal gameplay
+     - Expert gameplay
+     - Satisfying moments, unique scenes, and highlights.
+
+3. **Recording Guidelines**:
+   - Use **Unity Recorder** (official Unity package) to capture footage directly from the engine.
+     - Install via **Unity Package Manager**: (Unity Registry > Unity Recorder).
+     - Access it here: **Window > General > Recorder > Recorder Window**.
+   - Settings:
+     - Add a **Movie Sequence Recorder** (remove any Image Sequence).
+     - Set **Source** to Game View.
+     - Adjust **Target FPS** to 60 or 30.
+     - Set output resolution to **Custom (W1080 x H1350)**.
+   - Start Recording: The game will start and recording will capture directly from Game View.
+   - ![recorderWindow](images/recorderWindow.png)
+     ![recorderWindow](images/record.png)
+   - Retrieve recorded footage from your selected output folder.
+   - More on Unity Recorder: [Unity Guide](https://docs.unity3d.com/Packages/com.unity.recorder@3.0/manual/index.html).
+
+4. **Audio Requirements**:
+   - **Game Sounds Only**: Include all satisfying game sounds. They perform better in creatives, so make sure they’re present.
+   - **No Background Music**: Do not add music. If you have specific music in mind, please provide it separately for testing.
+
+5. **Length**:
+   - Videos should be **> 30 seconds** long. We'll edit them as needed but prefer complete levels and ample content for selection.
+
+6. **Key Content Elements**:
+   - **Fails & Wins**: Capture both fail and win moments. Ideally, create one video showing failures and another showing victories.
+   - **Green Background**: Use a green background if possible. This provides flexibility for testing variations.
+   - **Hand Tutorial**: Include a hand tutorial to help users better understand gameplay.
+   - **Game Diversity**:
+     - Showcase different game aspects, such as boosters, upgrades, and varying levels.
+     - Keep the footage dynamic—avoid sluggish or repetitive content that may need heavy editing.
+
+**Note**: Please verify all points before submitting the recordings. This will ensure a smooth process and minimize revisions.
      ![recorderWindow](images/recorderWindow.png)
      ![recorderWindow](images/record.png)
    - Click “Add Recorder” - make sure you add a Movie Sequence and remove the Image Sequence if there is one.
