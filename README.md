@@ -157,27 +157,46 @@ This section is here for cases where you are not using the events methods.
   </details>
 
 ## Video Creatives
-<details>
-  <summary></summary>
-  
-1. Provide gameplay videos for ads (preferred via Google Drive) with game sounds (if there are ones).
-2. Two videos are needed in a format of 1080x1350:
-   A. Length of 2 minutes of different fails.
-   B. Length of 3 minutes which include normal play, expert play, and satisfying moments (Unique scenes and highlights of the game).
-3. Recording tips:
-   - Please use the official Unity package called “Unity Recorder”. This package allows you to capture footage directly from the engine in all of the required resolutions, without any need for external software. You can install it from the package manager under the Unity Registry packages.
-   - Once installed you can access it here (Window > General > Recorder > Recorder Window):
-     ![recorderWindow](images/recorderWindow.png)
-     ![recorderWindow](images/record.png)
-   - Click “Add Recorder” - make sure you add a Movie Sequence and remove the Image Sequence if there is one.
-   - Source - Game View
-   - Switch target fps to 60/30.
-   - Make sure to change the output resolution to “Custom”. Change to the desired resolution (W1080xH1350) and record from the game view.
-   - Press “Start Recording”, the game should start and the engine will record.
-   - Reach your new captured footage file from the selected folder.
-   - For further information regarding the tool, see the official unity guide: [About Unity Recorder](https://docs.unity3d.com/Packages/com.unity.recorder@3.0/manual/index.html).
-</details>
 
+<details>
+  <summary>🎬</summary>
+Please check all the following points before sending the recordings—it’ll make the process smoother for everyone!
+  
+  ### 📏 Size Requirements
+  - **Resolution:** `1080x1350`
+  - **File Format:** `MP4`
+  - **Platform Compatibility:** We’re testing on **Facebook**, so ensure that all UI elements and game details are visible and not cut off. Keep file sizes manageable for easy downloading.
+
+  ### 🔊 Sound Guidelines
+  - **Music:** Avoid adding background music. We’ll test various music options ourselves, but if you have a preferred track, feel free to send it separately.
+  - **Game Sounds:** Include in-game sounds that add satisfaction to gameplay. These tend to improve performance in creatives, so be sure all game sounds are present.
+
+  ### ⏰ Length Preferences
+  - **Duration:** Keep videos **above 30 seconds**.
+  - **Editing Flexibility:** Although we’ll edit as needed, we prefer full level playthroughs and a variety of content to select from.
+
+  ### 🎮 Content Requirements
+  - **Fails & Wins:** Capture both **fail** and **win** moments. Ideally, provide two versions—one highlighting failures and the other victories.
+  - **Background:** Use a **green background** if possible, allowing us more flexibility to test variations.
+  - **Tutorial Hand:** Include a tutorial hand animation. This helps new users understand the game quickly.
+  - **Gameplay Variety:** Showcase game boosters, upgrades, and different locations. Avoid slow gameplay; highlight exciting moments to keep the content engaging.
+
+  ### 🎥 Recording Tips
+  - **Use Unity Recorder:** We recommend using the official **Unity Recorder** package. It captures footage directly from the engine in the required resolutions, eliminating the need for external software. Install it from the **Unity Package Manager** under Unity Registry packages.
+  - **Accessing Unity Recorder:**
+    - Go to **Window > General > Recorder > Recorder Window**:
+      ![recorderWindow](images/recorderWindow.png)
+      ![recorderWindow](images/recordNew.png)
+  - **Setup Steps:**
+    - Click **Add Recorder** – choose **Movie Sequence** and remove any **Image Sequence**.
+    - Set **Source** to **Game View**.
+    - Adjust **FPS** to 60/30.
+    - Select output resolution as **Custom** (`W1080xH1350`) and record from **Game View**.
+  - **Start Recording:** Once setup is complete, press **Start Recording**. The footage will save to your designated folder.
+
+  For further assistance, refer to the official Unity documentation: [Unity Recorder Guide](https://docs.unity3d.com/Packages/com.unity.recorder@3.0/manual/index.html).
+
+</details>
 
 ## SDK Implementation
 <details>
