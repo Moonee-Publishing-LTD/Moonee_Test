@@ -178,7 +178,7 @@ Please check all the following points before sending the recordings—it’ll ma
   ### 🎮 Content Requirements
   - **Fails & Wins:** Capture both **fail** and **win** moments. Ideally, provide two versions—one highlighting failures and the other victories.
   - **Background:** Use a **green background** if possible, allowing us more flexibility to test variations.
-  - **Tutorial Hand:** Include a tutorial hand animation, This helps new users understand the game quickly. [Download file 1](https://github.com/weareMOONEE/Moonee_Test/raw/main/images/Pencil.png?download=1). [Download file 2](https://github.com/weareMOONEE/Moonee_Test/raw/main/images/applepencil-story.png). 
+  - **Tutorial Hand:** Include a tutorial hand animation, This helps new users understand the game quickly. [Download file 1](images/Pencil.png?download=1). [Download file 2](images/applepencil-story.png). 
   - **Gameplay Variety:** Showcase game boosters, upgrades, and different locations. Avoid slow gameplay; highlight exciting moments to keep the content engaging.
 
   ### 🎥 Recording Tips
